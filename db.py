@@ -3,7 +3,7 @@ from pymongo.errors import DuplicateKeyError
 from datetime import datetime, timezone
 import os
 
-MONGO_URI = os.getenv("MONGO_URI", "mongodb+srv://OmarAgamy:supersecretpassword@cluster0.lkfhux0.mongodb.net/?appName=Cluster0")
+MONGO_URI = os.getenv("MONGO_URI")
 DB_NAME   = os.getenv("MONGO_DB_NAME", "discord_polls")
 
 _client: MongoClient | None = None
