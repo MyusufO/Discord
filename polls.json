@@ -1,0 +1,47 @@
+{
+  "world_cup_2026": {
+    "round_of_32": [
+      { "match_number": 1, "date": "June 29", "team_1": "Brazil", "team_2": "Japan" },
+      { "match_number": 2, "date": "June 29", "team_1": "Germany", "team_2": "Paraguay" },
+      { "match_number": 3, "date": "June 30", "team_1": "Netherlands", "team_2": "Morocco" },
+      { "match_number": 4, "date": "June 30", "team_1": "Ivory Coast", "team_2": "Norway" },
+      { "match_number": 5, "date": "July 1", "team_1": "France", "team_2": "Sweden" },
+      { "match_number": 6, "date": "July 1", "team_1": "Mexico", "team_2": "Ecuador" },
+      { "match_number": 7, "date": "July 1", "team_1": "England", "team_2": "DR Congo" },
+      { "match_number": 8, "date": "July 1", "team_1": "Belgium", "team_2": "Senegal" },
+      { "match_number": 9, "date": "July 2", "team_1": "USA", "team_2": "Bosnia and Herzegovina" },
+      { "match_number": 10, "date": "July 2", "team_1": "Spain", "team_2": "Austria" },
+      { "match_number": 11, "date": "July 2", "team_1": "Portugal", "team_2": "Croatia" },
+      { "match_number": 12, "date": "July 3", "team_1": "Switzerland", "team_2": "Algeria" },
+      { "match_number": 13, "date": "July 3", "team_1": "Australia", "team_2": "Egypt" },
+      { "match_number": 14, "date": "July 3", "team_1": "Argentina", "team_2": "Cape Verde" },
+      { "match_number": 15, "date": "July 4", "team_1": "Colombia", "team_2": "Ghana" }
+    ],
+    "round_of_16": [
+      { "match_number": 16, "date": "July 4", "team_1": "Canada", "team_2": "Winner of Match 3" },
+      { "match_number": 17, "date": "July 4", "team_1": "Winner of Match 2", "team_2": "Winner of Match 5" },
+      { "match_number": 18, "date": "July 5", "team_1": "Winner of Match 1", "team_2": "Winner of Match 4" },
+      { "match_number": 19, "date": "July 5", "team_1": "Winner of Match 6", "team_2": "Winner of Match 7" },
+      { "match_number": 20, "date": "July 6", "team_1": "Winner of Match 11", "team_2": "Winner of Match 10" },
+      { "match_number": 21, "date": "July 6", "team_1": "Winner of Match 9", "team_2": "Winner of Match 8" },
+      { "match_number": 22, "date": "July 7", "team_1": "Winner of Match 14", "team_2": "Winner of Match 13" },
+      { "match_number": 23, "date": "July 7", "team_1": "Winner of Match 12", "team_2": "Winner of Match 15" }
+    ],
+    "quarter_finals": [
+      { "match_number": 24, "date": "July 9", "team_1": "Winner of Match 17", "team_2": "Winner of Match 16" },
+      { "match_number": 25, "date": "July 10", "team_1": "Winner of Match 20", "team_2": "Winner of Match 21" },
+      { "match_number": 26, "date": "July 11", "team_1": "Winner of Match 18", "team_2": "Winner of Match 19" },
+      { "match_number": 27, "date": "July 11", "team_1": "Winner of Match 22", "team_2": "Winner of Match 23" }
+    ],
+    "semi_finals": [
+      { "match_number": 28, "date": "July 14", "team_1": "Winner of Match 24", "team_2": "Winner of Match 25" },
+      { "match_number": 29, "date": "July 15", "team_1": "Winner of Match 26", "team_2": "Winner of Match 27" }
+    ],
+    "third_place_match": [
+      { "match_number": 30, "date": "July 18", "team_1": "Loser of Match 28", "team_2": "Loser of Match 29" }
+    ],
+    "final": [
+      { "match_number": 31, "date": "July 19", "team_1": "Winner of Match 28", "team_2": "Winner of Match 29" }
+    ]
+  }
+}
