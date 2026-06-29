@@ -4,15 +4,17 @@ import json
 import discord
 import csv
 import io
+
 from dotenv import load_dotenv
+load_dotenv()
+TOKEN       = os.getenv("DISCORD_BOT_TOKEN")
+ADMIN_ROLE  = os.getenv("ADMIN_ROLE_NAME", "Admin")
 from polls import extract_poll_results
 from db import (init_db, save_poll_immediately, finalize_poll_capture, 
                 get_poll, get_uncaptured_polls, resolve_poll, 
                 add_points, get_points, get_leaderboard,save_manual_poll)
 
-load_dotenv()
-TOKEN       = os.getenv("DISCORD_BOT_TOKEN")
-ADMIN_ROLE  = os.getenv("ADMIN_ROLE_NAME", "Admin")
+
 
 intents = discord.Intents.default()
 intents.guild_polls = True
@@ -397,6 +399,7 @@ async def handle_commands(message: discord.Message):
         tournament_name = parts[1] if len(parts) > 1 else "WorldCup2026"
 
         guild_id = str(message.guild.id) if message.guild else "0"
+        print(f"[DEBUG] guild_id={guild_id}, tournament={tournament_name}")
         board = get_leaderboard(guild_id, tournament_name, limit=10)
 
         if not board:
