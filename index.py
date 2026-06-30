@@ -663,6 +663,50 @@ async def handle_commands(message: discord.Message):
             )
         )
         return
+        # ---- !help / !commands ----
+    if content.startswith(f"{PREFIX}help") or content.startswith(f"{PREFIX}commands"):
+        embed = discord.Embed(
+            title="📖 Bot Commands",
+            description="Available commands for the poll bot.",
+            color=discord.Color.blue()
+        )
+
+        embed.add_field(
+            name="🎯 Poll Management (Admin)",
+            value=(
+                f"`{PREFIX}resolve <message_id> <answer_id> [tournament]`\n"
+                "Resolve a poll and award points.\n\n"
+                f"`{PREFIX}update-points <message_id> <answer_id> [tournament]`\n"
+                "Update points for an already captured poll.\n\n"
+                f"`{PREFIX}create-manual-poll`\n"
+                "Create a manual poll and assign voters.\n\n"
+                f"`{PREFIX}capture-history <channel_id> [days]`\n"
+                "Capture historical Discord polls.\n\n"
+                f"`{PREFIX}export-leaderboard [tournament]`\n"
+                "Export the leaderboard as a CSV file."
+            ),
+            inline=False
+        )
+
+        embed.add_field(
+            name="🏆 Points & Leaderboard",
+            value=(
+                f"`{PREFIX}points`\n"
+                "View your points.\n\n"
+                f"`{PREFIX}points @user [tournament]`\n"
+                "View another user's points.\n\n"
+                f"`{PREFIX}leaderboard [tournament]`\n"
+                "Show the tournament leaderboard."
+            ),
+            inline=False
+        )
+
+        embed.set_footer(
+            text=f"Prefix: {PREFIX} • Tournament defaults to WorldCup2026"
+        )
+
+        await message.channel.send(embed=embed)
+        return
 # ---------------------------------------------------------------------------
 # Events
 # ---------------------------------------------------------------------------
